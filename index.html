@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bez růžice a měřítka - webová kartografie na webu iROZHLAS.cz 22. října 2019</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|EB+Garamond);
+      body { font-family: 'Roboto'; }
+      .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+      img {max-width: 760px; max-height: 350px}
+
+      law {
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+      }
+      .logo {
+        max-width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+class: center, middle
+
+# Přes čtyři miliony staveb - mapa všech budov v Česku
+
+<img src="./img/logo.jpg" class="logo">
+
+### Jan Cibulka, [jan.cibulka@rozhlas.cz](mailto:jan.cibulka@rozhlas.cz)
+
+prezentace: [https://datarozhlas.cz/odex-19/](https://datarozhlas.cz/odex-19/)
+
+---
+## Datová novinařina na iROZHLAS.cz
+
+[data na webu iROZHLAS.cz](https://www.irozhlas.cz/zpravy-tag/datova-zurnalistika)
+
+[podcast Dataři](https://www.irozhlas.cz/datari)
+
+![datažurna](./img/datazurna.png)
+---
+
+### Přes čtyři miliony staveb
+
+![datažurna](./img/domy.png)  
+[Přes čtyři miliony staveb. Podívejte se na mapu všech budov v Česku](https://www.irozhlas.cz/zpravy-domov/stavby-mapa-obce-urbanismus-gebrian_1902140614_zlo?latlng=50.0814917|14.426672199999985|13)  
+[A Map of Every Building in America](https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html)
+
+---
+### Jak?
+
+![stack](./img/stack.png)
+
+[https://github.com/mapbox](Mapbox OSS)  
+[https://github.com/mapbox/mapbox.js/](Mapbox.js)  
+[https://github.com/geopython](GeoPython)  
+[https://www.qgis.org/en/site/](QGIS)  
+[https://aws.amazon.com/s3/](Amazon S3)  
+[http://vdp.cuzk.cz/](RÚIAN)  
+[OpenStreetMap](https://www.openstreetmap.org/)
+---
+## Dotazy, připomínky? Napište mi
+
+[iROZHLAS.cz](https://www.irozhlas.cz/zpravy-tag/datova-zurnalistika)
+
+[podcast Dataři](https://www.irozhlas.cz/datari)
+
+[GitHub](https://github.com/datarozhlas)
+
+prezentace: [https://datarozhlas.cz/odex-19/](https://datarozhlas.cz/odex-19/)
+
+Případně pište na [jan.cibulka@rozhlas.cz](mailto:jan.cibulka@rozhlas.cz)
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>
+  var slideshow = remark.create();
+
+  //target blank
+  // copy https://code.luasoftware.com/tutorials/hugo/how-to-create-link-with-target-blanks-in-hugo-markdown/
+
+  var links = document.getElementsByTagName('a');
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname != window.location.hostname) {
+        links[i].target = '_blank';
+        links[i].rel = 'noopener noreferrer';
+    };
+  };
+
+</script>
+  </body>
+</html>
